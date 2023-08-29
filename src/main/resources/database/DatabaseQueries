@@ -1,0 +1,15 @@
+
+
+
+
+//add product_type column's constrain i.e., Unique, and Not Null in all three type of products
+ALTER TABLE sample.wooden_product ADD CONSTRAINT wooden_product_un UNIQUE (product_id);
+ALTER TABLE sample.wooden_product ALTER COLUMN product_id SET NOT NULL;
+
+ALTER TABLE sample.electronic_product ADD CONSTRAINT electronic_product_un UNIQUE (product_id);
+ALTER TABLE sample.electronic_product ALTER COLUMN product_id SET NOT NULL;
+
+ALTER TABLE sample.metal_product ADD CONSTRAINT metal_product_un UNIQUE (product_id);
+ALTER TABLE sample.metal_product ALTER COLUMN product_id SET NOT NULL;
+
+
