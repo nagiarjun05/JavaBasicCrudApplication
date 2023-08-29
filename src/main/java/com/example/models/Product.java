@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Table(name="product",schema = "sample")
 @Inheritance(strategy=InheritanceType.JOINED)
 @DiscriminatorColumn(name = "product_type",discriminatorType = DiscriminatorType.STRING)
-public  abstract class Product{
+public abstract class Product{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

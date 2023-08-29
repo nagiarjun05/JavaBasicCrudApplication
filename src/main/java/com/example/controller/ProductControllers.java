@@ -48,10 +48,6 @@ public class ProductControllers {
     public void addMetalProduct(@RequestBody MetalProduct metalProduct){
         productServices.postProduct(metalProduct);
     }
-//    @PostMapping("product")
-//    public void addProduct(@RequestBody Product product){
-//        productServices.postProduct(product);
-//    }
     @PostMapping("wooden")
     public void addWoodenProduct(@RequestBody WoodenProduct woodenProduct){
         productServices.postProduct(woodenProduct);
